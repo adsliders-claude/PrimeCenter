@@ -1,0 +1,40 @@
+# PrintFlow SaaS — Dépendances Python Windows
+# Installation: pip install -r requirements.txt
+
+# Surveillance dossiers (hotfolder temps réel)
+watchdog>=3.0.0
+
+# Interface graphique système (optionnel — pour notifications Windows)
+# plyer>=2.1.0
+
+# Automatisation PC (uniquement si hotfolder insuffisant)
+pyautogui>=0.9.54
+Pillow>=10.0.0       # Requis par pyautogui (screenshots)
+pywin32>=306         # Intégration Windows API (raccourcis, notifications)
+
+# HTTP (future intégration API SaaS)
+requests>=2.31.0
+
+# Gestion fichiers Excel/CSV
+openpyxl>=3.1.2
+
+# XML parsing (bibliothèque standard Python — pas besoin d'installer)
+# xml.etree.ElementTree → déjà inclus
+
+# Logging amélioré (optionnel)
+# colorlog>=6.7.0
+
+# ============================================================
+# INSTALLATION RAPIDE:
+# ============================================================
+# 1. Ouvrir PowerShell ou CMD
+# 2. cd C:\chemin\vers\PrimeCenter\scripts\windows
+# 3. pip install -r requirements.txt
+#
+# Si Python n'est pas installé:
+# → https://python.org/downloads (choisir Python 3.11+)
+# → Cocher "Add Python to PATH" lors de l'installation
+#
+# Vérifier l'installation:
+# python --version
+# python parse_nomenclature.py
